@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/barber_vip/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Barber VIP by Kurdly - Profesyonel Berber Takip Sistemi">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Barber VIP">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>Barber VIP by Kurdly</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase SDK Yüklemesi -->
+  <script type="module">
+    // Firebase Uygulamasını Başlatmak için gerekli modülleri içe aktar
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+
+    // Kendi Firebase Yapılandırma Bilgilerini Buraya Yapıştır
+    const firebaseConfig = {
+      apiKey: "AIzaSyCUgv5alob3PUG8TqLKcgovwsWDolUNdYo",
+      authDomain: "barber-vip-88d3c.firebaseapp.com",
+      projectId: "barber-vip-88d3c",
+      storageBucket: "barber-vip-88d3c.firebasestorage.app",
+      messagingSenderId: "772158944647",
+      appId: "1:772158944647:web:7349d3581c41a741d4cf22",
+      measurementId: "G-L6MPF2FERM"
+    };
+
+    // Firebase'i Başlat
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Uygulama globalinde erişilebilir hale getir (Opsiyonel)
+    window.firebaseApp = app;
+    window.firebaseDb = db;
+  </script>
+</head>
+
+<body>
+  <!-- Flutter Bootstrap Scripti -->
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+
+</html>
